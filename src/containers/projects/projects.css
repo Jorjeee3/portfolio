@@ -1,0 +1,33 @@
+.projects-section {
+    text-align: center;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.project-item {
+    width: 31%;
+    margin: 0 1.1%;
+    height: auto;
+    padding-bottom: 10px;
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 880px) {
+    .project-item {
+        width: 46%;
+        margin: 0 2%;
+        height: 300px;
+    } 
+}
+
+@media screen and (max-width: 530px) {
+    .project-item {
+        width: 80%;
+        margin: 0 10%;
+        height: 300px;
+    } 
+}
