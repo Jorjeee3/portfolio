@@ -39,7 +39,7 @@ const app = firebase.initializeApp(firebaseConfig);
   // let app = !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app();
   
 
-  export let db =  firebaseConfig.firestore()
+  export let db =  app.firestore()
 
 //   if (!firebase.apps.length) {
 //     firebase.initializeApp(firebaseConfig);
