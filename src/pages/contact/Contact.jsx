@@ -11,9 +11,6 @@ function Contact() {
     const [message, setMessage] = useState('')
     const [isAlert, setIsAlert] = useState(false)
 
-
-// Your web app's Firebase configuration
-
 const changeState = () => {
     console.log('dcdcdc');
     setIsAlert(!isAlert)
@@ -83,13 +80,6 @@ const handleSubmit = (e) => {
                 </label>
                 <button type='submit' onClick={changeState}>Send</button>
             </form>
-
-            {/* <div className={isAlert ? "alert-wrapper alert-active" : "alert-wrapper"}>
-                <div className='alert'>
-                    <span className='alert-name'>message has been sent</span>
-                    <button className='alert-close' onClick={changeState}>close</button>
-                </div>
-            </div> */}
 
             {isAlert && ( 
                 <div className="alert-wrapper">

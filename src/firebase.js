@@ -4,8 +4,9 @@
 // import 'firebase/firestore';
 // import firebase from 'firebase'
 
-import { initializeApp } from "firebase/app";
 import firebase from 'firebase/compat/app';
+// eslint-disable-next-line
+import { initializeApp } from "firebase/app";
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
@@ -20,8 +21,13 @@ const firebaseConfig = {
     messagingSenderId: "172884757298",
     appId: "1:172884757298:web:23d76c14f2aa064b3e252b"
   };
+
+// eslint-disable-next-line
+const app = firebase.initializeApp(firebaseConfig);
   
-  const app = firebase.initializeApp(firebaseConfig)
+  // const app2 = initializeApp(firebaseConfig)
+
+  // const app2 = firebase.app4
 
   // let app1 = app.firestore()
 
@@ -33,7 +39,7 @@ const firebaseConfig = {
   // let app = !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app();
   
 
-  export let db =  app.firestore()
+  export let db =  firebaseConfig.firestore()
 
 //   if (!firebase.apps.length) {
 //     firebase.initializeApp(firebaseConfig);
