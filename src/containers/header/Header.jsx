@@ -31,7 +31,7 @@ function Header() {
                     <a href="#skills" className="header-item-link" onClick={changeState}>Skills</a>
                 </li>
                 <li className="header-item">
-                    <Link to="contact" className="header-item-link">Contact me</Link>
+                    <Link to="contact" className="header-item-link header-link-contact">Contact me</Link>
                 </li>
             </ul>
         </nav>

@@ -1,0 +1,21 @@
+.telegram-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.telegram-block {
+    display: flex;
+    align-items: center;
+}
+
+.telegram-link {
+    color: #442638;
+    text-decoration: none;
+}
+
+.telegram-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    color: green;
+}

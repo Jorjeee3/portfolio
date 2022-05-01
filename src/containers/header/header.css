@@ -29,16 +29,30 @@
 
 .header-item {
     margin: 0 18px;
+    padding: 10px;
 }
 
 .header-item:last-child {
     margin-right: 0;
 }
 
+/* .header-item-contact {
+    background-color: rgb(66, 209, 63);
+} */
+.header-item:last-child {
+    background-color: rgb(216, 219, 24);
+    border-radius: 20px;
+}
+
 .header-item-link {
     color: aliceblue;
     text-decoration: none;
     font-weight: 600;
+}
+
+.header-link-contact {
+    color: #301b28;
+    padding: 10px;
 }
 
 .burger-menu {
