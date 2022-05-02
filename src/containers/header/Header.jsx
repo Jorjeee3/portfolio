@@ -14,7 +14,7 @@ function Header() {
   return (
     <header className='header'>
         <div className='header-logo'>
-        <Link to="/">George's portfolio</Link>
+            <Link to="/" className='header-link'>George's portfolio</Link>
         </div>
         <nav className={burgerMenu ? "header-nav active" : "header-nav"} onClick={() => setBurgerMenu(false)} >
             <div className='header-logo-nav'>

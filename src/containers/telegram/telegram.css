@@ -1,11 +1,16 @@
 .telegram-section {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.telegram-block {
+.media-block {
     display: flex;
     align-items: center;
+}
+
+.media-block div {
+    margin: 0 10px;
 }
 
 .telegram-link {
@@ -16,6 +21,30 @@
 .telegram-icon {
     width: 30px;
     height: 30px;
-    background-color: #fff;
-    color: green;
+    color: #301b28;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.download-cv-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ab4f08;
+    padding: 10px;
+    background-color: #301b28;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 520px) {
+    .cv-block {
+        margin-bottom: 30px;
+    }
+
+    .telegram-section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
