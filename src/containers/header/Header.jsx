@@ -18,7 +18,7 @@ function Header() {
         </div>
         <nav className={burgerMenu ? "header-nav active" : "header-nav"} onClick={() => setBurgerMenu(false)} >
             <div className='header-logo-nav'>
-                George's portfolio
+                <Link to="/" className='nav-link-logo'>George's portfolio</Link>
             </div>
             <ul className="header-list">
                 <li className="header-item">

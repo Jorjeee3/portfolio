@@ -12,10 +12,21 @@ function Contact() {
     const [isAlert, setIsAlert] = useState(false)
     const [errorCompany, setErrorCompany] = useState(false)
     const [errorEmail, setErrorEmail] = useState(false)
+    // const [errorDirtyEmail, setErrorDirtyEmail] = useState('email is not correct')
 
 const changeState = () => {
     setIsAlert(!isAlert)
 }
+
+// const validateEmail = (e) => {
+//     setEmail(e.target.value)
+//     const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+//     if (!re.test(String(e.target.value).toLowerCase())) {
+//         setErrorDirtyEmail(errorDirtyEmail)
+//     } else {
+//         setErrorDirtyEmail('')
+//     }
+// }
 
 const handleSubmit = (e) => {
     e.preventDefault()
@@ -24,11 +35,13 @@ const handleSubmit = (e) => {
     if (company === '' && email === '') {
         setErrorCompany(true)
         setErrorEmail(true)
+
         setIsAlert(!isAlert)
        
     } else if (company === '' || email === '') {
         setErrorCompany(!company)
         setErrorEmail(!email)
+
         setIsAlert(!isAlert)
     }
      else {
@@ -106,7 +119,7 @@ const handleSubmit = (e) => {
             </form>
 
             {isAlert && ( 
-                <div className="alert-wrapper">
+                <div className="alert-wrapper" onClick={() => setIsAlert(!isAlert)}>
                     <div className='alert'>
                         <span className='alert-name'>message has been sent</span>
                         <button className='alert-close' onClick={changeState}>close</button>

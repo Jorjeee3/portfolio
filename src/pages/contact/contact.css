@@ -70,6 +70,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    padding: 10px;
     height: 100%;
     background-color: #44263872;
 }
@@ -77,7 +78,6 @@
 .alert {
     max-width: 400px;
     width: 100%;
-    margin: 0 20px;
     height: 200px;
     background-color: #442638;
     display: flex;

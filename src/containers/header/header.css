@@ -73,7 +73,7 @@
 
 .header-nav {
     transform: translate(-300px, 0);
-    padding: 10px 0;
+    padding: 10px 30px;
     position: fixed;
     top: 0;
     left: 0;
@@ -90,13 +90,17 @@
 
 .header-logo-nav {
     display: inline-block;
-    color: #e29120;
     padding: 10px;
     background-color: #301b28;
     border-radius: 20px;
     font-weight: 800;
     font-size: 21px;
     margin-bottom: 120px;
+}
+
+.nav-link-logo {
+    text-decoration: none;
+    color: #e29120;
 }
 
 .header-list {
@@ -118,6 +122,11 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 24px;
+}
+
+.header-link-contact {
+    color: #301b28;
+    padding: 5px;
 }
 
 .burger-menu {
