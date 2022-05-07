@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 import './header.css'
 
@@ -22,13 +23,13 @@ function Header() {
             </div>
             <ul className="header-list">
                 <li className="header-item">
-                    <a href="#projects" className="header-item-link" onClick={changeState}>Projects</a> 
+                    <Link to="/#projects" className="header-item-link" onClick={changeState}>Projects</Link>
                 </li>
                 <li className="header-item">
-                    <a href="#about" className="header-item-link" onClick={changeState}>About me</a>
+                    <Link to="/#about" className="header-item-link" onClick={changeState}>About me</Link>
                 </li>
                 <li className="header-item">
-                    <a href="#skills" className="header-item-link" onClick={changeState}>Skills</a>
+                    <Link to="/#skills" className="header-item-link" onClick={changeState}>Skills</Link>
                 </li>
                 <li className="header-item">
                     <Link to="contact" className="header-item-link header-link-contact">Contact me</Link>
@@ -38,7 +39,7 @@ function Header() {
         <div className='burger-menu' >
             <input type="checkbox" id="checkbox1" className="checkbox1 visuallyHidden" />
             <label htmlFor="checkbox1">
-                <div className="hamburger hamburger1" onClick={changeState}>
+                <div className={burgerMenu ? "hamburger hamburger1" : "hamburger"} onClick={changeState}>
                     <span className="bar bar1"></span>
                     <span className="bar bar2"></span>
                     <span className="bar bar3"></span>
